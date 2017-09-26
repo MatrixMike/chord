@@ -1,4 +1,5 @@
 {-# OPTIONS_GHC -fwarn-missing-signatures #-}
+
 module Music.Instrument.GuitarRender where
 
 import Control.Monad

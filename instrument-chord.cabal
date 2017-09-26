@@ -8,7 +8,7 @@ maintainer: w@xy30.com
 homepage: https://github.com/xpika/chord
 synopsis: Render Instrument Chords
 description:
-    Library to generate musical instrument manipluations
+    Library to generate musical instrument manipulations
 category: Music
 author: Alan Hawkins
 extra-source-files:

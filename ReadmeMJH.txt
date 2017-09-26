@@ -8,3 +8,7 @@ I used to build with stack build but this project responds better to cabal build
 This sequence when executed suggests some improvements.
 cabal clean && cabal build
 
+cabal suggests to configure but when 'cabal configure' executed it does not cope well.
+
+I generally add {-# OPTIONS_GHC -fwarn-missing-signatures #-}  to .hs files to allow suggestions which usually increase readibility and support faster learning. This often shows me some signatures that I would never have worked out myself.
+

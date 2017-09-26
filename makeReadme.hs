@@ -1,3 +1,4 @@
+{-# OPTIONS_GHC -fwarn-missing-signatures #-}
 {-# LANGUAGE TemplateHaskell #-} 
 import System.IO
 import Music.Instrument.Chord 

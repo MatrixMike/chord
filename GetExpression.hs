@@ -1,3 +1,4 @@
+{-# OPTIONS_GHC -fwarn-missing-signatures #-}
 module GetExpression
 {-
 (getExpression)
@@ -5,7 +6,7 @@ module GetExpression
 where
 
 import Language.Haskell.TH
-import Language.Haskell.Meta.Parse.Careful
+--import Language.Haskell.Meta.Parse.Careful
 import Data.Either
 
 getExpression string = head $ rights [parseExp string]

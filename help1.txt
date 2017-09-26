@@ -1,0 +1,21 @@
+
+For more information about a command use:
+  cabal COMMAND --help
+
+To install Cabal packages from hackage use:
+  cabal install foo [--dry-run]
+
+Occasionally you need to update the list of available packages:
+  cabal update
+
+You can edit the cabal configuration file to set defaults:
+  /home/mikeh/.cabal/config
+mikeh@mikeh-1215B-1215B ~/chord $ cabal build
+cabal: Run the 'configure' command first.
+mikeh@mikeh-1215B-1215B ~/chord $ cabal configure
+Config file path source is default config file.
+Config file /home/mikeh/.cabal/config not found.
+Writing default configuration to /home/mikeh/.cabal/config
+cabal: failed to parse output of 'ghc-pkg dump'
+mikeh@mikeh-1215B-1215B ~/chord $ 
+

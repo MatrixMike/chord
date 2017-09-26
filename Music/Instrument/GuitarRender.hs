@@ -1,3 +1,4 @@
+{-# OPTIONS_GHC -fwarn-missing-signatures #-}
 module Music.Instrument.GuitarRender where
 
 import Control.Monad
@@ -171,7 +172,7 @@ renderPositionPattern' renderAllFrets renderPressedFrets annotateFrets firstTuni
     maximumFretAnnotationLength = maximum . map length $ fretAnnotations'
     fretAnnotations' =
       concat $
-      intersperse [" "] $ map (map show) $ (consec positionPatternSpannedFrets)
+      intersperse [" "] $ map (map show) (consec positionPatternSpannedFrets)
     stringIndicies = [0 ..]
     guitarStringCount = length positionPattern
     positionPatternSpannedFrets =

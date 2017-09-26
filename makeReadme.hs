@@ -19,9 +19,9 @@ main = do
         unlines $
         insertAt
           (length fileLines - 1)
-          (makeGhciLine (expressions !! 0) ++
+          (makeGhciLine (head expressions) ++
            "\n" ++
-           concat' $(return (getExpression (expressions !! 0))) ++
+           concat' $(return (getExpression (head expressions))) ++
            makeGhciLine (expressions !! 1) ++
            "\n" ++
            concat' $(return (getExpression (expressions !! 1))) ++
